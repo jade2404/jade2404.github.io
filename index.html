@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Workout Planner</h1>
+        <p class="app-concept">This app helps you figure out a workout routine based on your goals, time, equipment, and experience.</p>
+
+        <div id="question-goal" class="question-block">
+            <h2>What's your primary fitness goal?</h2>
+            <button data-goal="lose_weight">Lose Weight</button>
+            <button data-goal="gain_muscle">Gain Muscle</button>
+            <button data-goal="build_endurance">Build Endurance</button>
+        </div>
+
+        <div id="question-time" class="question-block hidden">
+            <h2>Can you spend more than 30 minutes for your workout?</h2>
+            <button data-time="yes">Yes (More than 30 mins)</button>
+            <button data-time="no">No (30 mins or less)</button>
+        </div>
+
+        <div id="question-equipment" class="question-block hidden">
+            <h2>Do you have access to gym equipment?</h2>
+            <button data-equipment="yes">Yes</button>
+            <button data-equipment="no">No</button>
+        </div>
+
+        <div id="question-experience" class="question-block hidden">
+            <h2>Are you a beginner?</h2>
+            <button data-experience="yes">Yes, I'm a Beginner</button>
+            <button data-experience="no">No, I'm Not a Beginner</button>
+        </div>
+
+        <div id="question-target-body-part" class="question-block hidden">
+            <h2>Which area do you want to target?</h2>
+            <button data-target="full_body">Full Body</button>
+            <button data-target="arms">Arms</button>
+            <button data-target="abs">Abs</button>
+            <button data-target="legs">Legs</button>
+            <button data-target="stamina">Stamina (Cardio)</button>
+        </div>
+
+        <div id="workout-recommendation" class="hidden">
+            <h2>Your Recommended Workout:</h2>
+            <p id="workout-text"></p>
+            <button id="start-over">Start Over</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
